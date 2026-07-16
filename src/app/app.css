@@ -1,0 +1,331 @@
+/* Estilos estructurales del layout de la aplicación */
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+    background-color: transparent; /* Permite que se vea el fondo general */
+}
+
+/* --- Barra Lateral (Sidebar) y sus Paneles Internos --- */
+.sidebar {
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Forzamos a que los bloques internos se oscurezcan */
+.profile-card-summary,
+.wallet-section,
+.quick-stats {
+    background-color: var(--bg-principal);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--borde-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-card-summary {
+    text-align: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: var(--brand-color);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto 0.5rem auto;
+}
+
+/* ¡AQUÍ REVELAMOS EL NOMBRE OCULTO! */
+.profile-card-summary h3 {
+    color: var(--texto-principal);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.reputation {
+    font-size: 0.9rem;
+    color: var(--texto-principal);
+    font-weight: 600;
+}
+
+.total-trades {
+    font-weight: normal;
+    color: var(--texto-secundario);
+}
+
+/* Estilos de la Billetera de Tiempo (HU1) */
+.wallet-section {
+    background-color: var(--bg-success-badge); /* Adapta el color al tema */
+    border: 1px solid var(--border-success-badge);
+    text-align: center;
+}
+
+.wallet-section h4 {
+    color: var(--brand-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.balance-display {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+}
+
+.balance-amount {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--texto-principal);
+    line-height: 1;
+}
+
+.balance-unit {
+    font-size: 0.85rem;
+    color: var(--brand-color);
+    font-weight: 600;
+}
+
+.text-muted {
+    color: var(--texto-secundario);
+    font-size: 0.75rem;
+}
+
+/* Estadísticas Rápidas */
+.quick-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--borde-color);
+    padding-bottom: 0.3rem;
+    color: var(--texto-principal);
+}
+
+/* --- Muro de Ofertas Contenedor --- */
+.feed-content {
+    flex: 3;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--texto-principal);
+}
+
+.filter-badge {
+    background-color: var(--bg-principal);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid var(--borde-color);
+    color: var(--texto-principal);
+    font-weight: 500;
+}
+
+.login-logo {
+    width: 45px; /* Ajustado el tamaño para que encaje armónicamente en el Header */
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Contenedor del encabezado del muro */
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--texto-principal);
+}
+
+/* El botón/badge de "Todas las categorías" que vemos arriba a la derecha */
+.filter-badge {
+    background-color: var(--bg-principal);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid var(--borde-color);
+    color: var(--texto-principal);
+    font-weight: 500;
+}
+
+/* Contenedor en lista/columna de las ofertas */
+.offers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Caja contenedora de la tarjeta (HU2) - Recuperamos el diseño de la primera foto */
+.offer-card {
+    background-color: var(--bg-principal) !important;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    position: relative; /* Clave para posicionar la etiqueta de la categoría */
+    border-left: 5px solid #4f46e5 !important; /* El borde morado característico */
+    border-top: 1px solid var(--borde-color) !important;
+    border-right: 1px solid var(--borde-color) !important;
+    border-bottom: 1px solid var(--borde-color) !important;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-2px);
+}
+
+/* La etiqueta de la categoría (COCINA Y GASTRONOMÍA) arriba a la derecha */
+.card-tag {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--bg-fondo);
+    color: var(--texto-principal);
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--borde-color);
+}
+
+/* Títulos y textos internos de la tarjeta */
+.offer-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--texto-principal) !important;
+    max-width: 75%; /* Evita que choque con la etiqueta */
+}
+
+.offer-description {
+    color: var(--texto-secundario) !important;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Línea divisoria y pie de la tarjeta */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--borde-color);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.username {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.user-rep {
+    font-size: 0.8rem;
+    color: #dd6b20;
+    font-weight: bold;
+}
+
+/* Destacado de Horas a la derecha */
+.offer-value {
+    text-align: right;
+    background-color: var(--bg-success-badge) !important;
+    border: 1px solid var(--border-success-badge) !important;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-md);
+}
+
+.value-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-success) !important;
+}
+
+.value-unit {
+    font-size: 0.8rem;
+    color: var(--accent-success) !important;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   DISEÑO FIJO DEL BOTÓN DE MODO OSCURO (CORREGIDO)
+   ========================================================================== */
+.btn-theme-toggle {
+    background-color: var(--bg-fondo) !important;
+    border: 2px solid var(--borde-color) !important;
+    border-radius: 50% !important;
+    width: 42px !important;
+    height: 42px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.3rem !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    padding: 0 !important;
+    box-shadow: var(--shadow);
+}
+
+.btn-theme-toggle:hover {
+    background-color: var(--borde-color) !important;
+    transform: scale(1.08);
+}
+
+.btn-theme-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Separacion de los botones de publicacion y de cerrar sesion */
+.nav-actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* Estilo del boton flotante de modo oscuro global */
+.global-theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}

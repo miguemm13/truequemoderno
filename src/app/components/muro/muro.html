@@ -1,0 +1,76 @@
+<div class="feed-header">
+    <h3>Ofertas Disponibles en la Comunidad</h3>
+    <div style="display: flex; gap: 12px; align-items: center;">
+
+        <button class="btn-simulation" [class.btn-simulation-active]="simulationMode" (click)="toggleSimulacionFalla()" title="Simular Ping/Echo Tactic">
+            {{ simulationMode ? '🔴 Detener Falla' : '⚡ Simular Falla Matching' }}
+        </button>
+    </div>
+</div>
+
+<!-- Availability Tactic Warning Banner -->
+<div class="availability-warning" *ngIf="!matchingServiceOnline">
+    <div class="warning-icon">⚠️</div>
+    <div class="warning-text">
+        <strong>Buscador de trueques temporalmente fuera de línea</strong>
+        <p>El monitor detectó la falla del motor de matching en {{ faultDetectionTime }} ms (Táctica Ping/Echo activa).</p>
+    </div>
+</div>
+
+<!-- Custom Toast Notification -->
+<div *ngIf="showToast" class="toast-container" [ngClass]="{'toast-error': toastType === 'error'}">
+    <div class="toast-content">
+        <div class="toast-icon">{{ toastType === 'error' ? '!' : '✓' }}</div>
+        <div class="toast-text">
+            <strong>{{ toastMessage }}</strong>
+            <p>{{ toastSubMessage }}</p>
+        </div>
+        <button class="toast-close" (click)="showToast = false">&times;</button>
+    </div>
+</div>
+
+<ng-container *ngIf="matchingServiceOnline">
+    <p *ngIf="errorCarga" class="lista-vacia-muro error-muro">{{ errorCarga }}</p>
+    <p *ngIf="!errorCarga && ofertas.length === 0" class="lista-vacia-muro">Aún no hay ofertas activas. ¡Sé el primero en publicar una!</p>
+
+    <section class="offers-grid">
+        <article class="offer-card" [class.match-card]="oferta.esSugerenciaMatch" *ngFor="let oferta of ofertas">
+            <div class="card-tag">{{ oferta.categoria }}</div>
+            <h4 class="offer-title">{{ oferta.titulo }}</h4>
+            <p class="offer-description">{{ oferta.descripcion }}</p>
+            
+            <!-- Detalle de Match Sugerido -->
+            <div class="match-explanation" *ngIf="oferta.esSugerenciaMatch">
+                <span>💡 <strong>{{ oferta.matchDetalle }}</strong></span>
+            </div>
+            
+            <div class="card-footer">
+                <div class="user-info">
+                    <span class="username">Por: {{ oferta.autor }}</span>
+                    <span class="user-rep">⭐ {{ oferta.reputacion }}</span>
+                </div>
+                <div class="offer-value">
+                    <span class="value-number">{{ oferta.horas.toFixed(1) }}</span>
+                    <span class="value-unit">Horas</span>
+                </div>
+            </div>
+
+            <button 
+                *ngIf="oferta.autorId !== miUsuarioId && !ofertasSolicitadas.has(oferta.id)"
+                class="btn btn-full btn-secondary" 
+                (click)="solicitarIntercambio(oferta)">
+                Solicitar Intercambio
+            </button>
+
+            <!-- ====== NUEVO BOTÓN EDITAR ====== -->
+            <div *ngIf="oferta.autorId === miUsuarioId" style="margin-top: 0.5rem; display: flex; gap: 8px;">
+                <button class="btn btn-secondary" (click)="editarOferta(oferta.id)">Editar</button>
+                <p class="texto-propia-oferta" style="margin: 0;">Esta es tu publicacion</p>
+            </div>
+            <!-- ================================ -->
+
+            <!-- Si no es el autor, mostramos el mensaje de que es suya (pero ya lo mostramos dentro del div de autor) 
+                 Por eso eliminamos el <p> suelto anterior y lo incluimos dentro del bloque. -->
+        </article>
+    </section>
+</ng-container>

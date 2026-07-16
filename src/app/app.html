@@ -1,0 +1,77 @@
+<ng-container *ngIf="isLoggedIn; else loginOnly">
+  <!-- Navbar Superior (Se mantiene fija en toda la app) -->
+  <header class="main-navbar">
+    <div class="logo">
+      <img src="assets/logoTruqueModerno.png" alt="Logo Trueque Moderno" class="login-logo">
+      <h2 [routerLink]="['/']" style="cursor: pointer;">Trueque<span>Moderno</span></h2>
+    </div>
+
+    <nav class="nav-links">
+      <a [routerLink]="['/muro']" routerLinkActive="active">Muro Comunitario</a>
+      <a [routerLink]="['/perfil']" routerLinkActive="active">Mi Perfil</a>
+      <a [routerLink]="['/mis-intercambios']" routerLinkActive="active">Mis Intercambios</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn-theme-toggle" (click)="themeService.toggleTheme()" [title]="themeService.isDarkMode() ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'">
+        {{ themeService.isDarkMode() ? '☀️' : '🌙' }}
+      </button>
+      </div>
+
+
+    <div class="nav-actions">
+      <a class="btn btn-primary" [routerLink]="['/crear-oferta']">+ Publicar Oferta</a>
+      <button class="btn btn-secondary logout-button" (click)="logout()">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal con Layout Flexbox -->
+  <div class="main-container">
+    <!-- Barra Lateral: Estado del Usuario (Se mantiene fija a la izquierda) -->
+    <aside class="sidebar">
+      <div class="profile-card-summary">
+        <div class="avatar">{{ initials }}</div>
+        <h3>{{ auth.profile()?.name }}</h3>
+        <p class="reputation">⭐ {{ auth.profile()?.reputation }} / 5.0 <span class="total-trades">({{ auth.profile()?.trades }} tratos)</span></p>
+      </div>
+
+      <div class="wallet-section">
+        <h4>Mi Billetera de Tiempo</h4>
+        <div class="balance-display">
+          <span class="balance-amount">{{ auth.profile()?.balance?.toFixed(2) }}</span>
+          <span class="balance-unit">Horas de Vida</span>
+        </div>
+        <p class="wallet-status text-muted">Límite preventivo de deuda: -2.0h</p>
+      </div>
+
+      <div class="quick-stats">
+        <div class="stat-item">
+          <span>Habilidades:</span>
+          <strong>{{ auth.userProfile?.skills?.length || 0 }}</strong>
+        </div>
+        <div class="stat-item">
+          <span>Ofertas Activas:</span>
+          <strong>{{ auth.profile()?.activeOffers }}</strong>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Sección Central Dinámica: Aquí se renderizará el Muro o el Perfil dependiendo de la ruta -->
+    <main class="feed-content">
+      <router-outlet />
+    </main>
+  </div>
+
+  <div *ngIf="aviso.visible()" class="aviso-flotante" [class.aviso-error]="aviso.tipo() === 'error'">
+    {{ aviso.mensaje() }}
+  </div>
+</ng-container>
+
+<ng-template #loginOnly>
+  <router-outlet />
+</ng-template>
+
+<!-- Botón flotante de modo oscuro cuando el usuario no ha iniciado sesión -->
+<button *ngIf="!isLoggedIn" class="btn-theme-toggle global-theme-toggle" (click)="themeService.toggleTheme()" [title]="themeService.isDarkMode() ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'">
+  {{ themeService.isDarkMode() ? '☀️' : '🌙' }}
+</button>

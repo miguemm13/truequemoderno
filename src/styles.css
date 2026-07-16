@@ -1,0 +1,220 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* --- Variables y Configuración Base (Modo Claro) --- */
+:root {
+    --bg-principal: #ffffff;    /* Cartas, Navbar superiores */
+    --bg-fondo: #f4f6f9;        /* El fondo grisáceo base detrás de todo */
+    --bg-tarjetas: #ffffff;
+    --borde-color: #e2e8f0;
+    
+    --texto-principal: #2d3748; /* Letras oscuras legibles */
+    --texto-secundario: #718096;
+    --texto-mutado: #a0aec0;
+    
+    --brand-color: #5b1ac4;
+    --brand-hover: #451296;
+    --accent-success: #38a169;
+    --bg-success-badge: #f0fff4;
+    --border-success-badge: #c6f6d5;
+    
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* --- Variables para el Modo Oscuro --- */
+.dark-mode {
+    --bg-principal: #1e293b;    /* Gris pizarra intermedio (Tailwind 800) */
+    --bg-fondo: #0f172a;        /* Gris pizarra muy oscuro (Tailwind 900) */
+    --bg-tarjetas: #1e293b;
+    --borde-color: #334155;
+    
+    --texto-principal: #f8fafc; /* Blanco casi puro muy brillante */
+    --texto-secundario: #cbd5e1; /* Gris claro legible */
+    --texto-mutado: #94a3b8;
+    
+    --brand-color: #818cf8;     /* Un morado más claro para que resalte en la oscuridad */
+    --brand-hover: #a5b4fc;
+    --accent-success: #4ade80;
+    --bg-success-badge: #064e3b; /* Tonos verdes oscuros para contrastar bien */
+    --border-success-badge: #047857;
+    
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Estilos Base de Reseteo --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    background-color: var(--bg-fondo);
+    color: var(--texto-principal);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- Ajustes de la Barra de Navegación Global --- */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-principal);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--borde-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 12px;           
+}
+
+/* ¡AQUÍ ARREGLAMOS LA PALABRA TRUEQUE! */
+.logo h2 {
+    color: var(--texto-principal);
+    font-weight: 800;
+}
+
+.logo h2 span {
+    color: var(--brand-color);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--texto-secundario);
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--brand-color);
+}
+
+/* --- Botones del Sistema --- */
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius-md);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: var(--brand-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-hover);
+}
+
+.btn-secondary {
+    background-color: var(--bg-fondo);
+    color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--brand-color);
+    color: var(--bg-principal);
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* --- Sobrescrituras para el Modo Oscuro en Login, Registro y Recuperación --- */
+.dark-mode .login-shell {
+    background: #000000 !important;
+}
+
+.dark-mode .match-card {
+    background: #000000 !important;
+}
+
+.dark-mode .value-display,
+.dark-mode .form-control,
+.dark-mode .oferta-item,
+.dark-mode .tags-container,
+.dark-mode .profile-card-summary,
+.dark-mode .wallet-section,
+.dark-mode .quick-stats {
+    background-color: #000000 !important;
+}
+
+.dark-mode .login-card {
+    background: #000000 !important;
+    border-color: #333333;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.dark-mode .profile-section.card {
+    background: #000000 !important;
+    border-color: #333333;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.dark-mode .login-brand h1 {
+    color: var(--texto-principal);
+}
+
+.dark-mode .login-brand h1 span {
+    color: var(--brand-color);
+}
+
+.dark-mode .login-brand p {
+    color: var(--texto-secundario);
+}
+
+.dark-mode .form-group label {
+    color: var(--texto-principal);
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select {
+    background-color: var(--bg-fondo);
+    border-color: var(--borde-color);
+    color: var(--texto-principal);
+}
+
+.dark-mode .form-group input::placeholder {
+    color: var(--texto-mutado);
+}
+
+.dark-mode .login-btn {
+    background-color: var(--brand-color);
+}
+
+.dark-mode .login-btn:hover {
+    background-color: var(--brand-hover);
+}
+
+.dark-mode .login-register,
+.dark-mode .login-forgot {
+    color: var(--texto-secundario);
+}
+
+.dark-mode .login-register a,
+.dark-mode .login-forgot a {
+    color: var(--brand-color);
+}
+
+.dark-mode .login-register a:hover,
+.dark-mode .login-forgot a:hover {
+    color: var(--brand-hover);
+}

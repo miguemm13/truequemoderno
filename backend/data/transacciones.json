@@ -1,0 +1,65 @@
+[
+  {
+    "id_transaccion": "TX-001",
+    "id_oferta": "OFR-001",
+    "id_receptor": "USR-002",
+    "id_prestador": "USR-001",
+    "horas": 1.5,
+    "estado": "Finalizado con exito",
+    "fecha_creacion": "2026-07-16T13:54:46-04:00"
+  },
+  {
+    "id_transaccion": "TX-002",
+    "id_oferta": "OFR-001",
+    "id_receptor": "USR-002",
+    "id_prestador": "USR-001",
+    "horas": 0.4,
+    "estado": "Cancelada por Prestador",
+    "fecha_creacion": "2026-07-16T13:54:46-04:00"
+  },
+  {
+    "id_transaccion": "TX-003",
+    "id_oferta": "OFR-001",
+    "id_receptor": "USR-002",
+    "id_prestador": "USR-001",
+    "horas": 0.4,
+    "estado": "Finalizado con exito",
+    "fecha_creacion": "2026-07-16T13:54:46-04:00"
+  },
+  {
+    "id_transaccion": "TX-004",
+    "id_oferta": "OFR-003",
+    "id_receptor": "USR-009",
+    "id_prestador": "USR-008",
+    "horas": 2.0,
+    "estado": "Finalizado con exito",
+    "fecha_creacion": "2026-07-16T14:02:14-04:00"
+  },
+  {
+    "id_transaccion": "TX-005",
+    "id_oferta": "OFR-004",
+    "id_receptor": "USR-008",
+    "id_prestador": "USR-009",
+    "horas": 2.0,
+    "estado": "Finalizado con exito",
+    "fecha_creacion": "2026-07-16T14:16:58-04:00"
+  },
+  {
+    "id_transaccion": "TX-006",
+    "id_oferta": "OFR-006",
+    "id_receptor": "USR-008",
+    "id_prestador": "USR-009",
+    "horas": 2.0,
+    "estado": "Finalizado con exito",
+    "fecha_creacion": "2026-07-16T14:19:28-04:00"
+  },
+  {
+    "id_transaccion": "TX-007",
+    "id_oferta": "OFR-005",
+    "id_receptor": "USR-009",
+    "id_prestador": "USR-008",
+    "horas": 2.0,
+    "estado": "Finalizado con exito",
+    "fecha_creacion": "2026-07-16T14:20:35-04:00"
+  }
+]

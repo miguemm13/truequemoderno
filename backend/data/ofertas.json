@@ -1,0 +1,82 @@
+[
+  {
+    "id_oferta": "OFR-001",
+    "id_creador": "USR-001",
+    "titulo": "Pintura y decoracion",
+    "descripcion": "Ofrezco pintar habitaciones interioes, incluyo brochas",
+    "categoria": "CAT-001",
+    "horas_estimadas": 4.5,
+    "fecha_publicacion": "2026-07-16T13:54:46-04:00",
+    "estado": "Finalizada"
+  },
+  {
+    "id_oferta": "OFR-002",
+    "id_creador": "USR-009",
+    "titulo": "Asesoria de Java",
+    "descripcion": "Asesoria de Java...........",
+    "categoria": "CAT-002",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-07-16T14:00:58-04:00",
+    "estado": "Retirada"
+  },
+  {
+    "id_oferta": "OFR-003",
+    "id_creador": "USR-008",
+    "titulo": "Clases de Ingles",
+    "descripcion": "Clases de Ingles........",
+    "categoria": "CAT-004",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-07-16T14:01:25-04:00",
+    "estado": "Finalizada"
+  },
+  {
+    "id_oferta": "OFR-004",
+    "id_creador": "USR-009",
+    "titulo": "Clases de Java",
+    "descripcion": "Clases de Java............",
+    "categoria": "CAT-002",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-07-16T14:01:59-04:00",
+    "estado": "Finalizada"
+  },
+  {
+    "id_oferta": "OFR-005",
+    "id_creador": "USR-008",
+    "titulo": "Clases de Ingles",
+    "descripcion": "Clases de Ingles.........",
+    "categoria": "CAT-004",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-07-16T14:16:51-04:00",
+    "estado": "Finalizada"
+  },
+  {
+    "id_oferta": "OFR-006",
+    "id_creador": "USR-009",
+    "titulo": "Asesoria de Java",
+    "descripcion": "Asesoria de JavaAsesoria de Java",
+    "categoria": "CAT-002",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-07-16T14:19:24-04:00",
+    "estado": "Finalizada"
+  },
+  {
+    "id_oferta": "OFR-007",
+    "id_creador": "USR-009",
+    "titulo": "Asesoria de Java",
+    "descripcion": "Asesoria de Java...........",
+    "categoria": "CAT-002",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-07-16T14:21:18-04:00",
+    "estado": "Activa"
+  },
+  {
+    "id_oferta": "OFR-008",
+    "id_creador": "USR-008",
+    "titulo": "Clases de Ingles",
+    "descripcion": "Clases de Ingles........",
+    "categoria": "CAT-004",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-07-16T14:21:35-04:00",
+    "estado": "Activa"
+  }
+]

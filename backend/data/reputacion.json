@@ -1,0 +1,110 @@
+[
+  {
+    "id_calificacion": "CAL-001",
+    "id_transaccion": "TX-001",
+    "id_evaluador": "USR-002",
+    "id_calificado": "USR-001",
+    "estrellas": 5,
+    "comentario": "Excelente carpintero, muy puntual.",
+    "fecha_creacion": "2026-07-16T13:54:46.566406500-04:00"
+  },
+  {
+    "id_calificacion": "CAL-002",
+    "id_transaccion": "TX-001",
+    "id_evaluador": "USR-001",
+    "id_calificado": "USR-002",
+    "estrellas": 4,
+    "comentario": "Excelente trato y coordinacion.",
+    "fecha_creacion": "2026-07-16T13:54:46.601580300-04:00"
+  },
+  {
+    "id_calificacion": "CAL-003",
+    "id_transaccion": "TX-003",
+    "id_evaluador": "USR-002",
+    "id_calificado": "USR-001",
+    "estrellas": 3,
+    "comentario": "Buen trabajo decorando, pero tardo algo.",
+    "fecha_creacion": "2026-07-16T13:54:46.679348600-04:00"
+  },
+  {
+    "id_calificacion": "CAL-004",
+    "id_transaccion": "TX-003",
+    "id_evaluador": "USR-001",
+    "id_calificado": "USR-002",
+    "estrellas": 5,
+    "comentario": "Todo correcto, muy atenta.",
+    "fecha_creacion": "2026-07-16T13:54:46.730872600-04:00"
+  },
+  {
+    "id_calificacion": "CAL-005",
+    "id_transaccion": "TX-004",
+    "id_evaluador": "USR-009",
+    "id_calificado": "USR-008",
+    "estrellas": 5,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:02:26.416253100-04:00"
+  },
+  {
+    "id_calificacion": "CAL-006",
+    "id_transaccion": "TX-004",
+    "id_evaluador": "USR-008",
+    "id_calificado": "USR-009",
+    "estrellas": 5,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:17:22.592688300-04:00"
+  },
+  {
+    "id_calificacion": "CAL-007",
+    "id_transaccion": "TX-005",
+    "id_evaluador": "USR-008",
+    "id_calificado": "USR-009",
+    "estrellas": 5,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:17:35.070256900-04:00"
+  },
+  {
+    "id_calificacion": "CAL-008",
+    "id_transaccion": "TX-005",
+    "id_evaluador": "USR-009",
+    "id_calificado": "USR-008",
+    "estrellas": 5,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:17:41.812439300-04:00"
+  },
+  {
+    "id_calificacion": "CAL-009",
+    "id_transaccion": "TX-006",
+    "id_evaluador": "USR-008",
+    "id_calificado": "USR-009",
+    "estrellas": 4,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:19:46.369872800-04:00"
+  },
+  {
+    "id_calificacion": "CAL-010",
+    "id_transaccion": "TX-006",
+    "id_evaluador": "USR-009",
+    "id_calificado": "USR-008",
+    "estrellas": 5,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:19:53.670296300-04:00"
+  },
+  {
+    "id_calificacion": "CAL-011",
+    "id_transaccion": "TX-007",
+    "id_evaluador": "USR-009",
+    "id_calificado": "USR-008",
+    "estrellas": 3,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:20:46.614640200-04:00"
+  },
+  {
+    "id_calificacion": "CAL-012",
+    "id_transaccion": "TX-007",
+    "id_evaluador": "USR-008",
+    "id_calificado": "USR-009",
+    "estrellas": 4,
+    "comentario": "-",
+    "fecha_creacion": "2026-07-16T14:20:55.334575500-04:00"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "USR-001",
+    "nombre": "Kte6UMrN2B8atBmjeTy2HiLC8oGyhoNPWz3/z4SlvwswtpZcvGzESkijTdzDCd5E",
+    "correo": "michelle123@gmail.com",
+    "contrasena": "3e6dc62f220c57f4e44e3dd541c175b3a4fd22986bafa16d47ce3d4c2b224ac8",
+    "habilidades": [
+      "Clases de Calculo"
+    ],
+    "demandas": [
+      "Pintar casa"
+    ],
+    "estado": "ACTIVO",
+    "preguntaSeguridad": "¿Cuál es el nombre de tu primera mascota?",
+    "respuestaSeguridad": "NNQ26EfcEXUHsitLRMluP+ZWug4FmFOtGMutIJfprnU\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 5.0,
+    "totalResenas": 1
+  },
+  {
+    "id": "USR-004",
+    "nombre": "whBGPciWcf/k3SVBUE7YCWNKh3kgj/i9gL9juEkmi+A\u003d",
+    "correo": "mini@barter.com",
+    "contrasena": "e915a43cdef7985ac6a9aa4cd61d5facb4591b254f441e8e7bcbf7e77e36b5dc",
+    "habilidades": [
+      "Arreglar carro"
+    ],
+    "demandas": [
+      "Clases de Calculo"
+    ],
+    "estado": "ACTIVO",
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "ywLUwSdA1pTrU22yQ38HN8HgR5qv3HxfGaCxgErVSLA\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 4.5,
+    "totalResenas": 1
+  },
+  {
+    "id": "USR-005",
+    "nombre": "8W+Xg06Sw05gZyJj3oCD6ddbDPE9IMlIN9zFbB/7Dtw\u003d",
+    "correo": "eithan@barter.com",
+    "contrasena": "56530d52251287ee53630d1e5f28c169f2804a0a0a6956d35d42d32b0f2f24cd",
+    "habilidades": [
+      "Pintar casa"
+    ],
+    "demandas": [
+      "Arreglar carro"
+    ],
+    "estado": "ACTIVO",
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "6oWaWGKKibqN2flSwdtK78Rnlcxe8t6CcmbNEFhGDDk\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 4.8,
+    "totalResenas": 1
+  },
+  {
+    "id": "USR-006",
+    "nombre": "4OSgQjTBWCat0ux/t7k520HsgTQCKsgbwGKNB4FNfug\u003d",
+    "correo": "juan2@barter.com",
+    "contrasena": "f6ccb3e8d609012238c0b39e60b2c9632b3cdede91e035dad1de43469768f4cc",
+    "habilidades": [
+      "Carpinteria"
+    ],
+    "demandas": [
+      "Plomeria"
+    ],
+    "estado": "ACTIVO",
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "W31IspWchct51cC6oXZrrU+sGmnxDUogVol6xoeheoQ\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 4.0,
+    "totalResenas": 1
+  },
+  {
+    "id": "USR-007",
+    "nombre": "nidFVVQcLHFIm5d5U0K183oLCe/aakivKeaO8OVPsvU\u003d",
+    "correo": "maria2@barter.com",
+    "contrasena": "626e3c805e77eeb472c42c6be607be2af7ac5c08fd7050f278e0330fe81abf57",
+    "habilidades": [
+      "Plomeria"
+    ],
+    "demandas": [
+      "Carpinteria"
+    ],
+    "estado": "ACTIVO",
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "X2pWjEmXCtWM6oEow80eiiZcOpqjo7wiMseP7jW4mDY\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 4.2,
+    "totalResenas": 1
+  }
+]

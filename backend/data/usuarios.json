@@ -1,0 +1,189 @@
+[
+  {
+    "id": "USR-001",
+    "nombre": "XCE+ZBnp7APQpiSj95h/LqCvEZTYSJuT1o4Y+PDVHjA\u003d",
+    "correo": "juan.perez@ucab.edu.ve",
+    "contrasena": "d26a206381cb7f351a7ef244fefa90083671300864c37c72b3fa0a3fd9d9614f",
+    "habilidades": [
+      "Carpinteria",
+      "Plomeria"
+    ],
+    "demandas": [],
+    "estado": "ACTIVO",
+    "telefono": null,
+    "preguntaSeguridad": "Nombre de tu primera mascota",
+    "respuestaSeguridad": "ECSelsgn+wD6JvUV2fggjQpiE0L5z9HMCSBv0x2FSCU\u003d",
+    "billetera": {
+      "saldo": 1.9,
+      "limite": -2.0
+    },
+    "reputacion": 4.0,
+    "totalResenas": 2
+  },
+  {
+    "id": "USR-002",
+    "nombre": "/TtlJ0GeiTOduKbSXlrWG+qHUZ3QXejUcIN2HGNDKUk\u003d",
+    "correo": "maria.gomez@ucab.edu.ve",
+    "contrasena": "7428557649a482e5ae23a41b2264c7605bc19d389558b2cf26c2640eca59c7b7",
+    "habilidades": [
+      "Diseno Grafico"
+    ],
+    "demandas": [],
+    "estado": "ACTIVO",
+    "telefono": null,
+    "preguntaSeguridad": "Nombre de tu calle",
+    "respuestaSeguridad": "OFe3r5cf/ADOYYU6Vxe47XsX5UQTqyvsCYUcdukLSog\u003d",
+    "billetera": {
+      "saldo": -1.9,
+      "limite": -2.0
+    },
+    "reputacion": 4.5,
+    "totalResenas": 2
+  },
+  {
+    "id": "USR-003",
+    "nombre": "spvgtrV1yyC0iIFByZkBk3czOWKC/g0ILFcnInsAAZI\u003d",
+    "correo": "miguel@barter.com",
+    "contrasena": "c0f9dd70bc1e756102407db97d747451a7e19b3a836c5b24c733fa47d6e3c24e",
+    "habilidades": [
+      "Clases de Calculo"
+    ],
+    "demandas": [
+      "Pintar casa"
+    ],
+    "estado": "ACTIVO",
+    "telefono": null,
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "5XOvE5OcEHJ90AyWgGzINJvMxAhRNDdBNH64ebb7NjE\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 0.0,
+    "totalResenas": 0
+  },
+  {
+    "id": "USR-004",
+    "nombre": "xi0dhXl3sLG42uk6zQLJt7Irz1A88f+U5MYEe+/wv0A\u003d",
+    "correo": "mini@barter.com",
+    "contrasena": "e915a43cdef7985ac6a9aa4cd61d5facb4591b254f441e8e7bcbf7e77e36b5dc",
+    "habilidades": [
+      "Arreglar carro"
+    ],
+    "demandas": [
+      "Clases de Calculo"
+    ],
+    "estado": "ACTIVO",
+    "telefono": null,
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "x1NzwrET9j4EOqRi3ZUZSIhyvcSJe4Ko7+2ZDAUpMzc\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 0.0,
+    "totalResenas": 0
+  },
+  {
+    "id": "USR-005",
+    "nombre": "we9n9c21Yud/mZ9sn/qe5sqths23jR7AFlcqilp7+lw\u003d",
+    "correo": "eithan@barter.com",
+    "contrasena": "56530d52251287ee53630d1e5f28c169f2804a0a0a6956d35d42d32b0f2f24cd",
+    "habilidades": [
+      "Pintar casa"
+    ],
+    "demandas": [
+      "Arreglar carro"
+    ],
+    "estado": "ACTIVO",
+    "telefono": null,
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "IbpryZ4CdUhuQJAJhK6LssZYX8lcshWL+9/B+ltIIk8\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 0.0,
+    "totalResenas": 0
+  },
+  {
+    "id": "USR-006",
+    "nombre": "UlXresIlEkeTO+pZSgazthzrU+S9VPj3BAdF+pH4FE0\u003d",
+    "correo": "juan2@barter.com",
+    "contrasena": "f6ccb3e8d609012238c0b39e60b2c9632b3cdede91e035dad1de43469768f4cc",
+    "habilidades": [
+      "Carpinteria"
+    ],
+    "demandas": [
+      "Plomeria"
+    ],
+    "estado": "ACTIVO",
+    "telefono": null,
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "StsAGZTABn1Ci+oetnHkNHOM6oLuHrJSRhFVbu+Xl2M\u003d",
+    "billetera": {
+      "saldo": -1.5,
+      "limite": -2.0
+    },
+    "reputacion": 0.0,
+    "totalResenas": 0
+  },
+  {
+    "id": "USR-007",
+    "nombre": "7hCEOj8ByKC030dX+VnwRqAmxGeHt4JfxN93JuILrGE\u003d",
+    "correo": "maria2@barter.com",
+    "contrasena": "626e3c805e77eeb472c42c6be607be2af7ac5c08fd7050f278e0330fe81abf57",
+    "habilidades": [
+      "Plomeria"
+    ],
+    "demandas": [
+      "Carpinteria"
+    ],
+    "estado": "ACTIVO",
+    "telefono": null,
+    "preguntaSeguridad": "Mascota",
+    "respuestaSeguridad": "Xr0FG0d1DJpvO+nlV/qks77LWXK0C/tRfOycHuEYb54\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 0.0,
+    "totalResenas": 0
+  },
+  {
+    "id": "USR-008",
+    "nombre": "lw3UVjDE/JgURwb+xTXgfCjlJNq2gaRMqMQ3dyXatek\u003d",
+    "correo": "eithi@gmail.com",
+    "contrasena": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "habilidades": [],
+    "demandas": [],
+    "estado": "ACTIVO",
+    "telefono": "04121234567",
+    "preguntaSeguridad": "¿En qué ciudad naciste?",
+    "respuestaSeguridad": "b4C7Xd+ui55G8GubA3rzcxAOB6TMrhCA5g5HKqbG4fc\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 4.5,
+    "totalResenas": 4
+  },
+  {
+    "id": "USR-009",
+    "nombre": "1lxCQy6MH2btaA1MbaxiTf5bqnZ+RBFDKheLYPUoMCE\u003d",
+    "correo": "miguelito@gmail.com",
+    "contrasena": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "habilidades": [],
+    "demandas": [],
+    "estado": "ACTIVO",
+    "telefono": "04241234567",
+    "preguntaSeguridad": "¿En qué ciudad naciste?",
+    "respuestaSeguridad": "MgQXDI+ljUIIgsnkVT7Hpf4DWpSk05h7u1QWULfliHw\u003d",
+    "billetera": {
+      "saldo": 0.0,
+      "limite": -2.0
+    },
+    "reputacion": 4.5,
+    "totalResenas": 4
+  }
+]

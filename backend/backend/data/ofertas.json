@@ -1,0 +1,52 @@
+[
+  {
+    "id_oferta": "OFR-003",
+    "id_creador": "USR-003",
+    "titulo": "Clases de Calculo",
+    "descripcion": "Clases particulares de calculo integral y diferencial",
+    "categoria": "CAT-002",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-06-18T01:22:00-04:00",
+    "estado": "Activa"
+  },
+  {
+    "id_oferta": "OFR-004",
+    "id_creador": "USR-004",
+    "titulo": "Arreglar carro",
+    "descripcion": "Mecanica general y afinacion de motor",
+    "categoria": "CAT-008",
+    "horas_estimadas": 3.0,
+    "fecha_publicacion": "2026-06-18T01:22:00-04:00",
+    "estado": "Activa"
+  },
+  {
+    "id_oferta": "OFR-005",
+    "id_creador": "USR-005",
+    "titulo": "Pintar casa",
+    "descripcion": "Pintura de interiores y exteriores",
+    "categoria": "CAT-001",
+    "horas_estimadas": 4.0,
+    "fecha_publicacion": "2026-06-18T01:22:00-04:00",
+    "estado": "Activa"
+  },
+  {
+    "id_oferta": "OFR-006",
+    "id_creador": "USR-006",
+    "titulo": "Carpinteria",
+    "descripcion": "Creacion y reparacion de muebles de madera",
+    "categoria": "CAT-004",
+    "horas_estimadas": 2.5,
+    "fecha_publicacion": "2026-06-18T01:22:00-04:00",
+    "estado": "Activa"
+  },
+  {
+    "id_oferta": "OFR-007",
+    "id_creador": "USR-007",
+    "titulo": "Plomeria",
+    "descripcion": "Reparacion de tuberias y filtraciones",
+    "categoria": "CAT-003",
+    "horas_estimadas": 2.0,
+    "fecha_publicacion": "2026-06-18T01:22:00-04:00",
+    "estado": "Activa"
+  }
+]

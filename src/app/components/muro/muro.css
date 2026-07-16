@@ -1,0 +1,363 @@
+/* ==========================================================================
+   ESTILOS PROPIOS DEL COMPONENTE DEL MURO DE OFERTAS (CONEXIÓN CON HTML)
+   ========================================================================== */
+
+/* Contenedor del encabezado del muro (Título y botón de categorías) */
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* CORREGIDO: Cambiado de h2 a h3 para que coincida con tu HTML */
+.feed-header h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+/* El badge de filtro superior derecho */
+.filter-badge {
+    background-color: var(--bg-principal);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid var(--borde-color);
+    color: var(--texto-principal);
+    font-weight: 500;
+}
+
+/* Contenedor que agrupa las tarjetas en vertical */
+.offers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* --- ESTRUCTURA DE LA TARJETA --- */
+.offer-card {
+    background-color: var(--bg-principal) !important;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    position: relative; /* Obligatorio para que .card-tag se posicione arriba a la derecha */
+    border-left: 5px solid #4f46e5 !important; /* Línea decorativa morada de Trueque Moderno */
+    border-top: 1px solid var(--borde-color) !important;
+    border-right: 1px solid var(--borde-color) !important;
+    border-bottom: 1px solid var(--borde-color) !important;
+    transition: transform 0.2s, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-2px);
+}
+
+/* La etiqueta flotante de la categoría (Ej: COCINA Y GASTRONOMÍA) */
+.card-tag {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--bg-fondo);
+    color: var(--texto-principal);
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--borde-color);
+}
+
+/* CORREGIDO: Cambiado de h3 a h4 para hacer match exacto con tu offer-title */
+.offer-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--texto-principal) !important;
+    max-width: 75%; /* Evita que el texto pise la etiqueta de categoría */
+}
+
+.offer-description {
+    color: var(--texto-secundario) !important;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Pie de la tarjeta (Distribución horizontal) */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--borde-color);
+    margin-bottom: 1rem; /* Deja un espacio para el botón de abajo si existe */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.username {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto-principal) !important;
+}
+
+.user-rep {
+    font-size: 0.8rem;
+    color: #dd6b20;
+    font-weight: bold;
+}
+
+/* El cuadro destacado del valor en Horas a la derecha */
+.offer-value {
+    text-align: right;
+    background-color: var(--bg-success-badge) !important;
+    border: 1px solid var(--border-success-badge) !important;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-md);
+}
+
+.value-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-success) !important;
+}
+
+.value-unit {
+    font-size: 0.8rem;
+    color: var(--accent-success) !important;
+    font-weight: 500;
+}
+
+/* Margen extra para separar el botón secundario del footer */
+.offer-card .btn-secondary {
+    margin-top: 0.5rem;
+}
+
+/* --- ESTADOS AUXILIARES DEL MURO --- */
+.lista-vacia-muro {
+    text-align: center;
+    color: var(--texto-secundario);
+    padding: 32px 16px;
+    font-size: 0.95rem;
+}
+
+.error-muro {
+    color: #ef4444;
+    font-weight: 500;
+}
+
+.texto-propia-oferta {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--texto-secundario);
+    margin: 12px 0 0 0;
+}
+
+.btn-solicitado {
+    background-color: var(--borde-color) !important;
+    color: var(--texto-secundario) !important;
+    border: 1px solid var(--borde-color) !important;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   ESTILOS DE NOTIFICACIONES TOAST (PRESERVADOS)
+   ========================================================================== */
+.toast-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    animation: slideIn 0.3s ease-out;
+}
+
+.toast-content {
+    background: #1e293b;
+    color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    min-width: 300px;
+    border-left: 4px solid #4f46e5;
+}
+
+.toast-icon {
+    background: #4f46e5;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.toast-text {
+    flex: 1;
+}
+
+.toast-text strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+.toast-text p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    margin-top: -4px;
+}
+
+.toast-close:hover {
+    color: white;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.toast-error .toast-content {
+    border-left-color: #ef4444;
+}
+
+.toast-error .toast-icon {
+    background: #ef4444;
+}
+
+/* ==========================================================================
+   ESTILOS DE SUGERENCIA DE MATCH Y RECOMENDACIONES
+   ========================================================================== */
+.match-card {
+    border-left: 5px solid #10b981 !important; /* Verde esmeralda vibrante para destacar el Match */
+    background: linear-gradient(135deg, var(--bg-principal), #f0fdf4) !important; /* Fondo verduzco sutil */
+    border-top: 1px solid #10b981 !important;
+    border-right: 1px solid #10b981 !important;
+    border-bottom: 1px solid #10b981 !important;
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.08) !important;
+}
+
+.match-badge {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.5rem;
+    background-color: #10b981;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+    animation: matchPulse 2.5s infinite ease-in-out;
+}
+
+/* Espaciado extra en el título de los matches para no pisar el badge superior izquierdo */
+.match-card .offer-title {
+    margin-top: 1.8rem;
+    max-width: 60%;
+}
+
+.match-explanation {
+    background-color: #e6f4ea;
+    color: #137333;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px dashed #34d399;
+}
+
+@keyframes matchPulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+    70% { transform: scale(1.03); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* --- ESTILOS DE TÁCTICA DE DISPONIBILIDAD (PING/ECHO) --- */
+.btn-simulation {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-simulation:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.btn-simulation-active {
+    background-color: #fee2e2 !important;
+    color: #991b1b !important;
+    border-color: #fca5a5 !important;
+}
+
+.btn-simulation-active:hover {
+    background-color: #fca5a5 !important;
+}
+
+.availability-warning {
+    background-color: #fffbeb;
+    border: 1px solid #fef3c7;
+    border-left: 4px solid #d97706;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.warning-icon {
+    font-size: 1.5rem;
+}
+
+.warning-text strong {
+    display: block;
+    color: #92400e;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.warning-text p {
+    margin: 0;
+    color: #b45309;
+    font-size: 0.85rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
